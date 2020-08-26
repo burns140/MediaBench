@@ -1,22 +1,17 @@
 package com.example.mediabench.ui.login;
 
-import android.util.Log;
-import android.util.Patterns;
-
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 import com.example.mediabench.R;
 
-import java.util.regex.Pattern;
-
 public class LoginViewModel extends ViewModel {
     private MutableLiveData<LoginFormState> loginFormState = new MutableLiveData<>();
 
-    LoginViewModel() {};
+    public LoginViewModel() {};
 
-    LiveData<LoginFormState> getLoginFormState() {
+    public LiveData<LoginFormState> getLoginFormState() {
         return  loginFormState;
     }
 

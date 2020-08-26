@@ -33,12 +33,10 @@ public class LoginFormState {
         return usernameError;
     }
 
-    public void setUsernameError(@Nullable Integer usernameError) {
-        this.usernameError = usernameError;
-    }
-
     @Nullable
     public Integer getPasswordError() {
         return passwordError;
     }
+
+    public boolean validData() { return validData; }
 }
